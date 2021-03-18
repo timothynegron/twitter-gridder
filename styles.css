@@ -1,0 +1,311 @@
+/* -------------------- TAG SELECTORS -------------------- */
+h2 {
+    font-family: Helvetica Neue;
+    margin: 0px;
+  }
+  
+  h3 {
+    font-family: Helvetica Neue;
+    margin: 0px;
+    font-size: 12pt;
+  }
+  
+  h5 {
+    font-family: Helvetica Neue;
+    margin: 5px;
+  }
+  
+  p {
+    font-family: Helvetica Neue;
+  }
+  
+  strong {
+    color: black;
+  }
+  
+  /* -------------------- ID SELECTORS -------------------- */
+  
+  /* Parent Grid */
+  #app {
+    /* Size of app Container */
+    height: 700px;
+    width: 400px;
+    
+    /* Parent Grid */
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 8% 20% 29% 8% 25% 10%;
+    grid-template-areas:
+    "row1 row1 row1 ."
+    "header header header header"
+    "row3 row3 row3 row3"
+    "row4 row4 row4 row4"
+    "tweet tweet tweet tweet"
+    "home search bell dm"
+  }
+  
+  /* -------------------- ROW 1 -------------------- */
+  #row-1 {
+    /* Parent Grid Location */
+    grid-area: row1;
+  
+    /* Child Grid */
+    display: grid;
+    grid-template-columns: 25% 40%;
+    grid-template-rows: 20% 50%;
+    grid-template-areas:
+    "back space"
+    "back num"
+  }
+  
+  #back-button {
+    /* Child Grid Location */
+    grid-area: back;
+  }
+  
+  #title-space {
+    /* Child Grid Location */
+    grid-area: space;
+  }
+  
+  #title-num {
+    /* Child Grid Location */
+    grid-area: num;
+  }
+  
+  /* -------------------- ROW 2 -------------------- */
+  #header {
+    /* Parent Grid Location */
+    grid-area: header;
+  }
+  
+  /* -------------------- ROW-3 -------------------- */
+  #row-3 {
+    /* Parent Grid Location */
+    grid-area: row3;
+  
+    /* Child Grid */
+    display: grid;
+    grid-template-columns: 30% 30% 15% 25%;
+    grid-template-rows: 30% 15% 10% 30% 15%;
+    grid-template-areas:
+    "avatar . dots follow"
+    "spacex . . ."
+    "atspace . . ."
+    "bio bio bio bio"
+    "following followers . ."
+  }
+  
+  
+  #avartar {
+    /* Child Grid Location */
+    grid-area: avatar;
+  }
+  
+  #dots {
+    /* Child Grid Location */
+    grid-area: dots;
+  }
+  
+  #follow {
+    /* Child Grid Location */
+    grid-area: follow;
+  }
+  
+  #spacex {
+    /* Child Grid Location */
+    grid-area: spacex;
+  }
+  
+  #atspace {
+    /* Child Grid Location */
+    grid-area: atspace;
+  }
+  
+  #bio {
+    /* Child Grid Location */
+    grid-area: bio;
+    
+    /* Design */
+    justify-self: center;
+    align-self: center;
+  }
+  
+  #following {
+    /* Child Grid Location */
+    grid-area: following;
+  
+    /* Design */
+    justify-self: center;
+    align-self: center;
+    color:  #778798;
+  }
+  
+  #followers {
+    /* Child Grid Location */
+    grid-area: followers;
+  
+    /* Design */
+    justify-self: center;
+    align-self: center;
+    color: #778798;
+  }
+  
+  
+  
+  
+  /* -------------------- ROW 4 -------------------- */
+  #row-4 {
+    /* Parent Grid Location */
+    grid-area: row4;
+  
+    /* Child Grid */
+    display: grid;
+    grid-template-columns: 23% 42% 20% 15%;
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "tweets-text replies media likes"
+  }
+  
+  #tweets-text {
+    /* Child Grid Location */
+    grid-area: tweets-text;
+  
+    /* Design */
+    justify-self: center;
+    align-self: center;
+  
+      padding: 18px;
+      border-bottom: solid;
+  }
+  
+  
+  #replies {
+    /* Child Grid Location */
+    grid-area: replies;
+  
+    /* Design */
+    justify-self: center;
+    align-self: center;
+  }
+  
+  #media {
+    /* Child Grid Location */
+    grid-area: media;
+  
+    /* Design */
+    justify-self: center;
+    align-self: center;
+  }
+  
+  #likes {
+    /* Child Grid Location */
+    grid-area: likes;
+  
+    /* Design */
+    justify-self: center;
+    align-self: center;
+  }
+  
+  
+  
+  
+  /* -------------------- ROW 5 -------------------- */
+  
+  #tweet {
+    /* Parent Grid Location */
+    grid-area: tweet;
+  }
+  
+  
+  /* -------------------- ROW 6 -------------------- */
+  
+  
+  #home {
+    /* Parent Grid Location */
+    grid-area: home;
+  
+    /* Design */
+    justify-self: center;
+    align-self: center;
+  }
+  
+  #search {
+    /* Parent Grid Location */
+    grid-area: search;
+  
+    /* Design */
+    justify-self: center;
+    align-self: center;
+  }
+  
+  #bell {
+    /* Parent Grid Location */
+    grid-area: bell;
+  
+    /* Design */
+    justify-self: center;
+    align-self: center;
+  }
+  
+  #dm {
+    /* Parent Grid Location */
+    grid-area: dm;
+  
+    /* Design */
+    justify-self: center;
+    align-self: center;
+  }
+  
+  
+  /* -------------------- CLASS SELECTORS -------------------- */
+  
+  .img-size-1 {
+    width: 25px;
+  }
+  
+  .img-size-2 {
+    width: 400px;
+  }
+  
+  .image-size-3 {
+    width: 100%;
+  }
+  
+  .img-size-4 {
+    width: 60px;
+    border-radius: 50%;
+  }
+  
+  .img-size-5 {
+    width: 30px;
+  }
+  
+  .button-size-1 {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    border-style: solid;
+    background-color: white;
+    border-color: #1DA1F2
+  }
+  
+  .button-size-2 {
+    width: 90%;
+    height: 70%;
+    border-radius: 40px;
+    border-style: solid;
+    background-color: white;
+    border-color: #1DA1F2;
+    color: #1DA1F2;
+    font-size: 14pt;
+    font-weight: bold;
+  }
+  
+  .font-color-1 {
+    color: #778798;
+  }
+  
+  .font-color-2 {
+    color: #1DA1F2;
+  }
